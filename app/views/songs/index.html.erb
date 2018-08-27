@@ -1,8 +1,14 @@
+<body>
 <h1>All Songs</h1>
 
+<div>
 <% @songs.each do |song| %>
   <ul>
+
+    <li><img src="vinyl.jpg" alt="vinyl"/></li>
     <li>Title: <%= song.title %></li>
     <li>Play Count: <%= song.play_count %></li>
   </ul>
 <% end %>
+</div>
+</body>
